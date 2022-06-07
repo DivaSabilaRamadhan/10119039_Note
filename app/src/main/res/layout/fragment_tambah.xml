@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".TambahFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="scrool"
+        android:padding="18dp"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/editJudul"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColorHint="#bdc3c7"
+                android:hint=" Judul"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:inputType="textNoSuggestions"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/editTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint=" Tanggal"
+                android:ems="10"
+                android:textColorHint="#bdc3c7"
+                android:textColor="@color/black"
+                android:inputType="textNoSuggestions"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Keterangan "
+                android:textSize="20sp"
+                tools:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Keterangan"
+                android:ems="10"
+                android:gravity="top|left"
+                android:lines="8"
+                android:textColorHint="#bdc3c7"
+                android:textColor="@color/black"
+                android:inputType="textNoSuggestions"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b_tambah"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:contentDescription="tambah"
+                    android:text="Tambah Catatan"
+                    android:textColor="#ffff"
+                    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
